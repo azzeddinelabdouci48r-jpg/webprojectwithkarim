@@ -22,7 +22,6 @@
                     <div>
                         <p class="text-muted mb-1 small text-uppercase">Total Produits</p>
                         <h3 class="fw-bold mb-1">124</h3>
-                        <small class="text-success"><i class="bi bi-arrow-up"></i> +12 ce mois</small>
                     </div>
                     <div class="icon-box icon-blue"><i class="bi bi-box-seam-fill"></i></div>
                 </div>

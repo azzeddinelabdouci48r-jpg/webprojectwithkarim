@@ -58,17 +58,11 @@
                 <span class="badge bg-danger ms-auto">7</span>
             </a>
 
-            <div class="sidebar-section-label">Systeme</div>
-
-            <a href="#" class="nav-link-item" data-page="settings.php">
-                <i class="bi bi-gear-fill"></i>
-                Parametres
-            </a>
 
         
-
+    
         </nav>
-    <a href="logout.php" class="nav-link-item">
+    <a href="admin_login.php" class="nav-link-item">
                 <i class="bi bi-box-arrow-left"></i>
                 Deconnexion
             </a>

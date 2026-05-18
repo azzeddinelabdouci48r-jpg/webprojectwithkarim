@@ -1,0 +1,302 @@
+/* ===========================
+   BODY
+=========================== */
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a1a2e;
+}
+
+/* ===========================
+   PAGE HEADER
+=========================== */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.page-header h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.page-header small {
+    font-size: 13px;
+    color: #868e96;
+}
+
+/* ===========================
+   STAT CARDS
+=========================== */
+.stat-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 100%;
+}
+
+.stat-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.icon-dark   { background: #f1f3f5; color: #1a1a2e; }
+.icon-blue   { background: #e7f5ff; color: #1971c2; }
+.icon-green  { background: #ebfbee; color: #2f9e44; }
+.icon-orange { background: #fff3bf; color: #e67700; }
+.icon-red    { background: #fff5f5; color: #e03131; }
+
+.stat-info p {
+    margin: 0;
+    font-size: 11px;
+    color: #868e96;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+
+.stat-info h3 {
+    margin: 4px 0 0;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.stat-info small {
+    font-size: 12px;
+    color: #868e96;
+}
+
+/* ===========================
+   TABLE CARD
+=========================== */
+.table-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.table-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 22px;
+    border-bottom: 1px solid #f1f3f5;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.table-card-header h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+.search-box {
+    position: relative;
+    width: 220px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+    font-size: 13px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px 0 32px;
+    font-size: 13px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background: #f8f9fa;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.search-box input:focus {
+    border-color: #868e96;
+    background: #fff;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+.table { margin: 0; }
+
+.table thead th {
+    background: #f8f9fa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #868e96;
+    border: none;
+    padding: 12px 18px;
+}
+
+.table td {
+    padding: 13px 18px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-color: #f1f3f5;
+    color: #1a1a2e;
+}
+
+.table tbody tr:hover { background: #f8f9fa; }
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+.badge-attente {
+    background: #fff3bf;
+    color: #e67700;
+    border: 1px solid #ffe066;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-confirme {
+    background: #e7f5ff;
+    color: #1971c2;
+    border: 1px solid #a5d8ff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-livre {
+    background: #ebfbee;
+    color: #2f9e44;
+    border: 1px solid #b2f2bb;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-annule {
+    background: #fff5f5;
+    color: #e03131;
+    border: 1px solid #ffc9c9;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+.btn-status {
+    background: #f1f3f5;
+    color: #1a1a2e;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn-status:hover { background: #e9ecef; }
+
+/* ===========================
+   MODAL
+=========================== */
+.modal-content {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 16px 48px rgba(0,0,0,.12);
+}
+
+.modal-header {
+    border-bottom: 1px solid #f1f3f5;
+    padding: 18px 24px;
+}
+
+.modal-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.modal-body  { padding: 22px 24px; }
+.modal-footer { border-top: 1px solid #f1f3f5; padding: 14px 24px; }
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 6px;
+}
+
+.form-select {
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    background: #f8f9fa;
+    padding: 9px 12px;
+}
+
+.form-select:focus {
+    border-color: #868e96;
+    box-shadow: none;
+    background: #fff;
+}
+
+/* detail rows in modal */
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid #f1f3f5;
+    font-size: 14px;
+}
+
+.detail-row:last-child { border-bottom: none; }
+.detail-label { color: #868e96; font-weight: 500; }
+.detail-value { font-weight: 600; color: #1a1a2e; }
+
+/* ===========================
+   EMPTY STATE
+=========================== */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #adb5bd;
+}
+
+.empty-state i { font-size: 46px; display: block; margin-bottom: 12px; }
+.empty-state p { font-size: 14px; margin: 0; }

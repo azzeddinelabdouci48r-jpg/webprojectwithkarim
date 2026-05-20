@@ -56,14 +56,15 @@ function getAllCommandes($pdo) {
             C.prix_unitaire,
             C.date_commande,
             C.status,
-            C.client_nom,
-            C.client_email,
-            C.produit_nom,
+            CL.nom   AS client_nom,
+            CL.email AS client_email,
+            P.nom    AS produit_nom,
             (C.quantite * C.prix_unitaire) AS total
         FROM COMMANDE C
+        JOIN CLIENT  CL ON C.client_id  = CL.client_id
+        JOIN PRODUIT P  ON C.produit_id = P.produit_id
         ORDER BY C.date_commande DESC
     ");
-
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 // ============================================

@@ -58,15 +58,31 @@
                 <span class="badge bg-danger ms-auto">7</span>
             </a>
 
-
-        
-    
-        </nav>
-    <a href="admin_login.php" class="nav-link-item">
-                <i class="bi bi-box-arrow-left"></i>
-                Deconnexion
+            <a href="#" class="nav-link-item" data-page="gestion_expedition.php">
+                <i class="bi bi-truck"></i>
+                Gestion Expédition
+                <span class="badge bg-danger ms-auto">7</span>
             </a>
-     
+
+            <div class="sidebar-section-label">Rapports</div>
+
+            <a href="#" class="nav-link-item" data-page="rapport_ventes.php">
+                <i class="bi bi-bar-chart-fill"></i>
+                Ventes par Catégorie
+            </a>
+
+            <a href="#" class="nav-link-item" data-page="commandes_attente.php">
+                <i class="bi bi-hourglass-split"></i>
+                Commandes en Attente
+                <span class="badge bg-warning text-dark ms-auto">7</span>
+            </a>
+
+        </nav>
+
+        <a href="admin_login.php" class="nav-link-item">
+            <i class="bi bi-box-arrow-left"></i>
+            Deconnexion
+        </a>
 
     </aside>
 
@@ -75,13 +91,14 @@
     <div class="main-content">
 
         <!-- Topbar -->
-       <div class="topbar">
-    <button onclick="toggleSidebar()" id="sidebarToggle" class="btn btn-light">
-        <i class="bi bi-list"></i>
-    </button>
+        <div class="topbar">
+            <button onclick="toggleSidebar()" id="sidebarToggle" class="btn btn-light">
+                <i class="bi bi-list"></i>
+            </button>
 
-    <h2>Bienvenue, Azzeddine</h2>
-</div>
+            <h2>Bienvenue, Azzeddine</h2>
+        </div>
+
         <!-- Zone de contenu = iframe -->
         <iframe id="contentFrame" src="admin_dashboard.php" name="contentFrame"></iframe>
     </div>
